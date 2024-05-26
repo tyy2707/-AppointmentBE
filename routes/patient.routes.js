@@ -17,9 +17,6 @@ router.get("/:id", patientController.getPatientDetail);
 //edit patient
 router.put("/", patientController.updatePatientInfo);
 
-// update photo 
-// router.put("/photo/:id", accountController.updateAccountPhotoList);
-
 
 
 
