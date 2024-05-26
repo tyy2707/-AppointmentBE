@@ -47,7 +47,6 @@ const FeedbackController = {
                 user_id
             });
             const savedData = await newObject.save();
-            console.log("🚀 ~ createFeedback: ~ savedData:", savedData)
             existingData.feedback_id = savedData._id
             await existingData.save()
             res.status(201).json(savedData);
